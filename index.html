@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row alig-items-center justify-content-center">
+        <div class="col-4">
+          <h1>Covid-19 Infos</h1>
+          <div class="alert alert-info confirmed"></div>
+          <div class="alert alert-danger deaths"></div>
+          <div class="alert alert-success recovered"></div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Select County</label>
+            <select class="form-control" id="countriesList">
+              <option>Select County</option>
+            </select>
+            <p class="countryconfirmid"></p>
+            <p class="countrydeaths"></p>
+            <p class="countryrecoverd"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
